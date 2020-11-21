@@ -158,6 +158,77 @@ ul {
   margin-right: 10vh;
   width: 50vh;
 }
+.ul3 {
+  display: grid;
+  list-style: none;
+  object-fit: cover;
+  height: 100%;
+  background-image: url(Pics/aboutus.png);
+  background-position: 40% 60%;
+  margin: 0px;
+  padding: 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.ul3 li {
+  width: 100%;
+}
+.ul3 p {
+  width: 100%;
+  margin: 0px;
+  margin-top: 10vh;
+}
+.ul3 h1 {
+  grid-column: 1 / span 3;
+  width: 50%;
+  margin-left: 25%;
+  height: 6vh;
+}
+.ul3 .C {
+  margin-top: 0px;
+  grid-column: 1/3 span;
+  width: 50%;
+  margin-left: 25%;
+}
+.ul3 img {
+  width: 100%;
+}
+
+.grmnt{
+  display: grid;
+  background-color: #e9edf0;
+  background-image: linear-gradient(315deg, #e9edf0 0%, #232626 100%);
+}
+.grmnt img{
+  width: 50%;
+  border: solid thick;
+  background-color: lightgray;
+  border-right: none;
+  margin-top: 10%;
+  margin-left: 50%;
+  margin-bottom: 10%;
+  padding-right: 10%;
+}
+.frwk{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;  
+}
+.frwk li{
+  list-style: none;
+  color: #000000;
+  border: solid thick black;
+  background-color: lightgray;
+  background-image: none;
+  border-left: none;
+  padding: 0vh;
+  margin-left: 0vh;
+  margin-top: 10%;
+  padding-top: 5%; 
+  margin-bottom: 10%;
+  width: 90%;
+  text-align: start;
+}
 .A {
   display: grid;
   width: 100%;
@@ -398,82 +469,94 @@ ul {
     .ul2 li {
       margin-left: 5%;
     }
-  }
-  @media (max-width: 510px) {
-    header {
-      display: flex;
-      justify-content: center;
-    }
-    .B {
-      display: none;
-    }
-    .dropbtn {
-      display: none;
-    }
-    .D {
+    .ul3 {
       display: grid;
-      margin-left: 0px;
-    }
-    .ul2 li {
-      margin-left: 0px;
-    }
-  }
-  @media (max-width: 472px) {
-    .ul2 img {
-      width: 20vh;
-      height: 30vh;
-      margin-right: 0px;
-    }
-    .ul2 p {
-      width: 20vh;
-      margin-right: 0px;
-    }
-    .ul2 li {
-      margin-left: 15%;
-    }
-    p {
-      width: 20vh;
-    }
-    footer h1 {
-      display: none;
-    }
-  }
-  @media (max-width: 400px) {
-    ul {
+      list-style: none;
+      object-fit: cover;
+      height: 100%;
+      background-image: url(Pics/aboutus.png);
+      background-position: 40% 60%;
+      margin: 0px;
+      padding: 0px;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
     }
-    .ul2 {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+    @media (max-width: 510px) {
+      header {
+        display: flex;
+        justify-content: center;
+      }
+      .B {
+        display: none;
+      }
+      .dropbtn {
+        display: none;
+      }
+      .D {
+        display: grid;
+        margin-left: 0px;
+      }
+      .ul2 li {
+        margin-left: 0px;
+      }
     }
-    .F {
-      display: none;
+    @media (max-width: 472px) {
+      .ul2 img {
+        width: 20vh;
+        height: 30vh;
+        margin-right: 0px;
+      }
+      .ul2 p {
+        width: 20vh;
+        margin-right: 0px;
+      }
+      .ul2 li {
+        margin-left: 15%;
+      }
+      p {
+        width: 20vh;
+      }
+      footer h1 {
+        display: none;
+      }
     }
-    .ul2 li {
-      margin-left: 0px;
-      width: 20vh;
+    @media (max-width: 400px) {
+      ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+      .ul2 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+      .F {
+        display: none;
+      }
+      .ul2 li {
+        margin-left: 0px;
+        width: 20vh;
+      }
+      .ul2 img {
+        margin: 0px;
+      }
+      .ul2 p {
+        margin: 0px;
+      }
     }
-    .ul2 img {
-      margin: 0px;
-    }
-    .ul2 p {
-      margin: 0px;
-    }
-  }
-  @media (max-width: 380px) {
-    .B {
-      height: 5vh;
-      width: 5vh;
-    }
-    .dropbtn {
-      height: 5vh;
-      width: 5vh;
-    }
-    footer p {
-      margin-top: 0px;
-      height: 18vh;
-      width: 20vh;
+    @media (max-width: 380px) {
+      .B {
+        height: 5vh;
+        width: 5vh;
+      }
+      .dropbtn {
+        height: 5vh;
+        width: 5vh;
+      }
+      footer p {
+        margin-top: 0px;
+        height: 18vh;
+        width: 20vh;
+      }
     }
   }
 }

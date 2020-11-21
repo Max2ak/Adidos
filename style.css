@@ -27,6 +27,7 @@ footer h1 {
 footer h2 {
   margin-left: 0px;
   margin-top: 5vh;
+  margin-right: 5vh;
 }
 footer p {
   width: 30vh;
@@ -133,6 +134,7 @@ ul {
   grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+
 .ul2 {
   display: grid;
   list-style: none;
@@ -148,10 +150,12 @@ ul {
   width: 50vh;
   height: 50vh;
   object-fit: cover;
-  margin-left: 20vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
 }
 .ul2 p {
-  margin-left: 20vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
   width: 50vh;
 }
 .A {
@@ -183,7 +187,6 @@ ul {
 }
 .D {
   margin-left: 5vh;
-  margin-right: 5vh;
 }
 .E {
   border: solid black;
@@ -315,14 +318,23 @@ ul {
     .C {
       margin-top: 0vh;
     }
+    .ul2 {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+    .ul2 li {
+      margin-left: 25%;
+      margin-right: 25%;
+    }
   }
   @media (max-width: 835px) {
     ul img {
       width: 30vh;
     }
-    .ul2 img {
-      width: 30vh;
-      margin: 0px;
+    .ul2 li {
+      width: 50vh;
+      margin-left: 25%;
+      margin-right: 0px;
     }
     h1 {
       width: 20vh;
@@ -346,8 +358,8 @@ ul {
     ul img {
       width: 30vh;
     }
-    .ul2 img {
-      width: 30vh;
+    .ul2 li {
+      margin-left: 10%;
     }
     h1 {
       width: 20vh;
@@ -383,6 +395,9 @@ ul {
       width: 100%;
       margin: 0px;
     }
+    .ul2 li {
+      margin-left: 5%;
+    }
   }
   @media (max-width: 510px) {
     header {
@@ -398,33 +413,67 @@ ul {
     .D {
       display: grid;
       margin-left: 0px;
-      grid-column-start: span;
     }
-    @media (max-width: 472px) {
-      .ul2 img {
-        width: 20vh;
-        height: 30vh;
-      }
-      p {
-        width: 20vh;
-      }
-      footer h1 {
-        display: none;
-      }
+    .ul2 li {
+      margin-left: 0px;
     }
-    @media (max-width: 380px) {
-      header {
-        width: 100%;
-        margin: 0px;
-      }
-      .B {
-        height: 5vh;
-        width: 5vh;
-      }
-      .dropbtn {
-        height: 5vh;
-        width: 5vh;
-      }
+  }
+  @media (max-width: 472px) {
+    .ul2 img {
+      width: 20vh;
+      height: 30vh;
+      margin-right: 0px;
+    }
+    .ul2 p {
+      width: 20vh;
+      margin-right: 0px;
+    }
+    .ul2 li {
+      margin-left: 15%;
+    }
+    p {
+      width: 20vh;
+    }
+    footer h1 {
+      display: none;
+    }
+  }
+  @media (max-width: 400px) {
+    ul {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+    .ul2 {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+    .F {
+      display: none;
+    }
+    .ul2 li {
+      margin-left: 0px;
+      width: 20vh;
+    }
+    .ul2 img {
+      margin: 0px;
+    }
+    .ul2 p {
+      margin: 0px;
+    }
+  }
+  @media (max-width: 380px) {
+    .B {
+      height: 5vh;
+      width: 5vh;
+    }
+    .dropbtn {
+      height: 5vh;
+      width: 5vh;
+    }
+    footer p {
+      margin-top: 0px;
+      height: 18vh;
+      width: 20vh;
     }
   }
 }
